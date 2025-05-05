@@ -98,10 +98,21 @@ section{
   padding-top: 70px;
 }
 
+.hsr-background-section {
+  background-image: url("hsrbg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 20px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .main {
   position: relative;
   z-index: 1;
-  padding: 100px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -128,6 +139,148 @@ section{
   object-fit: cover;
 }
 
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.floating-elements {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  padding: 0 60px;
+}
+
+.floating-title {
+  text-align: center;
+  margin-bottom: 50px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.floating-title h1 {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-shadow: 0 0 15px rgba(155, 201, 255, 0.8);
+}
+
+.floating-title p {
+  font-size: 24px;
+  font-weight: 300;
+  color: #9bc9ff;
+  text-shadow: 0 0 10px rgba(155, 201, 255, 0.5);
+}
+
+.download-platforms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 900px;
+  background: rgba(5, 5, 16, 0.6);
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  animation: slideUp 1s ease-in-out 0.5s both;
+}
+
+.qr-code {
+  margin-bottom: 20px;
+}
+
+.qr-code img {
+  height: 100px;
+  width: auto;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+}
+
+.platform-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.platform-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.platform-btn:hover {
+  transform: translateY(-5px);
+  background: rgba(155, 201, 255, 0.2);
+  box-shadow: 0 5px 15px rgba(155, 201, 255, 0.3);
+}
+
+.platform-btn img {
+  height: 100%;
+  width: auto;
+}
+
+.rating img {
+  height: 80px;
+  width: auto;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .floating-title h1 {
+    font-size: 40px;
+  }
+  
+  .floating-title p {
+    font-size: 18px;
+  }
+  
+  .platform-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .platform-btn {
+    width: 80%;
+  }
+}
+
 footer {
   background-color: rgba(10, 10, 25, 0.9);
   color: white;
@@ -140,7 +293,7 @@ footer {
 }
 
 .character-page {
-  padding: 120px 40px 60px; /* add top space due to fixed header */
+  padding: 120px 40px 60px;
   background-color: #050510;
   color: white;
 }
