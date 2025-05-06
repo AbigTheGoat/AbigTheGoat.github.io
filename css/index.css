@@ -99,7 +99,7 @@ section{
 }
 
 .hsr-background-section {
-  background-image: url("hsrbg.jpg");
+  background-image: url("/images/backgrounds/hsrbg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -261,7 +261,7 @@ section{
   }
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 768px) {
   .floating-title h1 {
     font-size: 40px;
@@ -308,7 +308,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 40px;
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
 }
 
