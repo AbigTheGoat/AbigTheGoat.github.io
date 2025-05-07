@@ -4,11 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/index.css">
-  <title>Characters - Honkai Star Railed</title>
+  <script src="javascript/script.js"></script>
+  <title>Characters - Honkai Star Rail</title>
 </head>
 <body>
 
 <header>
+  <div class="logo-container">
+    <a href="index.html">
+      <img src="/images/logos/HSR Logo.png" alt="Honkai Star Rail Logo" class="logo">
+    </a>
+  </div>
   <nav>
     <ul class="navbar">
       <li><a href="index.html">Home</a></li>
@@ -18,47 +24,235 @@
       <li><a href="Paths.html">Paths</a></li>
     </ul>
   </nav>
-  <div class="logo-container">
-    <a href="https://hsr.hoyoverse.com/en-us/home" target="_blank">
-      <img src="/images/logos/HSR Logo.png" alt="Honkai Star Rail Logo" class="logo">
-    </a>
-  </div>
 </header>
 
-<img src="images/backgrounds/characterbg.jpg" alt="Characters">
+<div class="banner-image">
+  <img src="images/backgrounds/characterbg.jpg" alt="Characters Banner" style="width: 100%; height: 300px; object-fit: cover;">
+</div>
 
 <main class="character-page">
-  <h1 class="page-title">Meet the Characters</h1>
+  <h1 class="page-title">Character Database</h1>
+  <p class="page-subtitle">Explore all playable characters in Honkai Star Rail, filter by Path or Element.</p>
+
+  <div class="filter-container">
+    <button class="filter-button active" data-filter="all">All Characters</button>
+    <button class="filter-button" data-filter="path-destruction">Destruction</button>
+    <button class="filter-button" data-filter="path-hunt">Hunt</button>
+    <button class="filter-button" data-filter="path-erudition">Erudition</button>
+    <button class="filter-button" data-filter="path-harmony">Harmony</button>
+    <button class="filter-button" data-filter="path-nihility">Nihility</button>
+    <button class="filter-button" data-filter="path-preservation">Preservation</button>
+    <button class="filter-button" data-filter="path-abundance">Abundance</button>
+    <button class="filter-button" data-filter="path-remembrance">Remembrance</button>
+  </div>
+
+  <div class="filter-container">
+    <button class="filter-button" data-filter="element-physical">Physical</button>
+    <button class="filter-button" data-filter="element-fire">Fire</button>
+    <button class="filter-button" data-filter="element-ice">Ice</button>
+    <button class="filter-button" data-filter="element-lightning">Lightning</button>
+    <button class="filter-button" data-filter="element-wind">Wind</button>
+    <button class="filter-button" data-filter="element-quantum">Quantum</button>
+    <button class="filter-button" data-filter="element-imaginary">Imaginary</button>
+  </div>
 
   <div class="character-grid">
-    <div class="character-card">
-      <img src="/images/Characters/March.png" alt="Character Name">
-      <h2>March 7th</h2>
-      <p>A cheerful, quirky girl with a camera who travels the stars with the Astral Express.</p>
+    <!-- March 7th -->
+    <div class="character-card" data-path="preservation" data-element="ice">
+      <div class="card-image-container">
+        <img src="/images/Characters/March.png" alt="March 7th">
+        <div class="path-badge">
+          <img src="/images/paths/preservation.png" alt="Path of Preservation">
+        </div>
+        <div class="element-badge" style="position: absolute; top: 15px; left: 15px;">
+          <img src="/images/Characters/Elements/element_ice.png" alt="Ice Element" style="width: 30px; height: 30px;">
+        </div>
+      </div>
+      <div class="card-content">
+        <h2>March 7th</h2>
+        <p>A cheerful, quirky girl with a camera who travels the stars with the Astral Express. Her origin is unknown, but her positive attitude brightens everyone's journey.</p>
+        <span class="world-type">4★ Ice Preservation</span>
+      </div>
     </div>
 
-    <div class="character-card">
-      <img src="/images/Characters/Dan Heng.png" alt="Character Name">
-      <h2>Dan Heng</h2>
-      <p>A quiet and calm archivist of the Astral Express who wields a powerful spear.</p>
+    <!-- Dan Heng -->
+    <div class="character-card" data-path="hunt" data-element="wind">
+      <div class="card-image-container">
+        <img src="/images/Characters/Dan Heng.png" alt="Dan Heng">
+        <div class="path-badge">
+          <img src="/images/paths/hunt.png" alt="Path of Hunt">
+        </div>
+        <div class="element-badge" style="position: absolute; top: 15px; left: 15px;">
+          <img src="/images/Characters/Elements/element_wind.png" alt="Wind Element" style="width: 30px; height: 30px;">
+        </div>
+      </div>
+      <div class="card-content">
+        <h2>Dan Heng</h2>
+        <p>A quiet and calm archivist of the Astral Express who wields a powerful spear. Despite his reserved nature, he's a valuable ally in battle.</p>
+        <span class="world-type">4★ Wind Hunt</span>
+      </div>
     </div>
 
-    <div class="character-card">
-      <img src="/images/Characters/Himeko.png" alt="Character Name">
-      <h2>Himeko</h2>
-      <p>An adventurous scientist who encountered the Astral Express as a child when it got stranded in her home world.</p>
+    <!-- Himeko -->
+    <div class="character-card" data-path="erudition" data-element="fire">
+      <div class="card-image-container">
+        <img src="/images/Characters/Himeko.png" alt="Himeko">
+        <div class="path-badge">
+          <img src="/images/paths/erudition.png" alt="Path of Erudition">
+        </div>
+        <div class="element-badge" style="position: absolute; top: 15px; left: 15px;">
+          <img src="/images/Characters/Elements/element_fire.png" alt="Fire Element" style="width: 30px; height: 30px;">
+        </div>
+      </div>
+      <div class="card-content">
+        <h2>Himeko</h2>
+        <p>An adventurous scientist who encountered the Astral Express as a child when it got stranded in her home world. Now she's a key scientist on the crew.</p>
+        <span class="world-type">5★ Fire Erudition</span>
+      </div>
     </div>
 
-    <div class="character-card">
-      <img src="/images/Characters/welt.png" alt="Character Name">
-      <h2>Welt</h2>
-      <p>The wise and sophisticated former Anti-Entropy Sovereign who inherits the name of the world — Welt.</p>
+    <!-- Welt -->
+    <div class="character-card" data-path="nihility" data-element="imaginary">
+      <div class="card-image-container">
+        <img src="/images/Characters/welt.png" alt="Welt">
+        <div class="path-badge">
+          <img src="/images/paths/nihility.png" alt="Path of Nihility">
+        </div>
+        <div class="element-badge" style="position: absolute; top: 15px; left: 15px;">
+          <img src="/images/Characters/Elements/element_imaginary.png" alt="Imaginary Element" style="width: 30px; height: 30px;">
+        </div>
+      </div>
+      <div class="card-content">
+        <h2>Welt</h2>
+        <p>The wise and sophisticated former Anti-Entropy Sovereign who inherits the name of the world — Welt. He serves as a mentor figure to the crew.</p>
+        <span class="world-type">5★ Imaginary Nihility</span>
+      </div>
     </div>
 
-    <div class="character-card">
-      <img src="/images/Characters/Trailblazer.webp" alt="Character Name">
-      <h2>Trailblazer</h2>
-      <p>A girl/boy who boarded the Astral Express. They chose to travel with the Astral Express to eliminate the dangers posed by the Stellaron.</p>
+    <!-- Physical Trailblazer -->
+    <div class="character-card" data-path="destruction" data-element="physical">
+      <div class="card-image-container">
+        <img src="/images/Characters/Trailblazer.webp" alt="Physical Trailblazer">
+        <div class="path-badge">
+          <img src="/images/paths/destruction.png" alt="Path of Destruction">
+        </div>
+        <div class="element-badge" style="position: absolute; top: 15px; left: 15px;">
+          <img src="/images/Characters/Elements/element_physical.png" alt="Physical Element" style="width: 30px; height: 30px;">
+        </div>
+      </div>
+      <div class="card-content">
+        <h2>Trailblazer (Physical)</h2>
+        <p>The protagonist who boarded the Astral Express. They chose to travel with the crew to eliminate the dangers posed by the Stellaron.</p>
+        <span class="world-type">5★ Physical Destruction</span>
+      </div>
+    </div>
+    
+    <!-- Fire Trailblazer -->
+    <div class="character-card" data-path="preservation" data-element="fire">
+      <div class="card-image-container">
+        <img src="/images/Characters/Trailblazer.webp" alt="Fire Trailblazer">
+        <div class="path-badge">
+          <img src="/images/paths/preservation.png" alt="Path of Preservation">
+        </div>
+        <div class="element-badge" style="position: absolute; top: 15px; left: 15px;">
+          <img src="/images/Characters/Elements/element_fire.png" alt="Fire Element" style="width: 30px; height: 30px;">
+        </div>
+      </div>
+      <div class="card-content">
+        <h2>Trailblazer (Fire)</h2>
+        <p>An alternate path of the protagonist who focuses on defensive abilities while wielding the power of fire.</p>
+        <span class="world-type">5★ Fire Preservation</span>
+      </div>
+    </div>
+
+    <!-- Harmony Trailblazer -->
+    <div class="character-card" data-path="harmony" data-element="harmony">
+      <div class="card-image-container">
+        <img src="/images/Characters/Trailblazer.webp" alt="Harmony Trailblazer">
+        <div class="path-badge">
+          <img src="/images/paths/harmony.png" alt="Path of Harmony">
+        </div>
+        <div class="element-badge" style="position: absolute; top: 15px; left: 15px;">
+          <img src="/images/Characters/Elements/element_imaginary.png" alt="Imaginary Element" style="width: 30px; height: 30px;">
+        </div>
+      </div>
+      <div class="card-content">
+        <h2>Trailblazer (Imaginary)</h2>
+        <p>An alternate path of the protagonist who focuses on defensive abilities while wielding the power of fire.</p>
+        <span class="world-type">5★ Imaginary Harmony</span>
+      </div>
+    </div>
+
+    <!-- Bronya -->
+    <div class="character-card" data-path="harmony" data-element="wind">
+      <div class="card-image-container">
+        <img src="/images/Characters/bronya.jpg" alt="Bronya">
+        <div class="path-badge">
+          <img src="/images/paths/harmony.png" alt="Path of Harmony">
+        </div>
+        <div class="element-badge" style="position: absolute; top: 15px; left: 15px;">
+          <img src="/images/Characters/Elements/element_wind.png" alt="Wind Element" style="width: 30px; height: 30px;">
+        </div>
+      </div>
+      <div class="card-content">
+        <h2>Bronya</h2>
+        <p>The elegant and composed Supreme Guardian of Belobog. She leads her people with wisdom and strength, making difficult decisions with grace.</p>
+        <span class="world-type">5★ Wind Harmony</span>
+      </div>
+    </div>
+
+    <!-- Seele -->
+    <div class="character-card" data-path="hunt" data-element="quantum">
+      <div class="card-image-container">
+        <img src="/images/Characters/seele.jpg" alt="Seele">
+        <div class="path-badge">
+          <img src="/images/paths/hunt.png" alt="Path of Hunt">
+        </div>
+        <div class="element-badge" style="position: absolute; top: 15px; left: 15px;">
+          <img src="/images/Characters/Elements/element_quantum.png" alt="Quantum Element" style="width: 30px; height: 30px;">
+        </div>
+      </div>
+      <div class="card-content">
+        <h2>Seele</h2>
+        <p>A swift and deadly member of Wildfire who moves like the wind. Her quantum powers allow her to deal devastating damage to single targets.</p>
+        <span class="world-type">5★ Quantum Hunt</span>
+      </div>
+    </div>
+
+    <!-- Clara -->
+    <div class="character-card" data-path="destruction" data-element="physical">
+      <div class="card-image-container">
+        <img src="/images/Characters/clara.jpg" alt="Clara">
+        <div class="path-badge">
+          <img src="/images/paths/destruction.png" alt="Path of Destruction">
+        </div>
+        <div class="element-badge" style="position: absolute; top: 15px; left: 15px;">
+          <img src="/images/Characters/Elements/element_physical.png" alt="Physical Element" style="width: 30px; height: 30px;">
+        </div>
+      </div>
+      <div class="card-content">
+        <h2>Clara</h2>
+        <p>A young girl with a gentle heart accompanied by her robotic guardian, Svarog. Together they form a powerful physical damage duo.</p>
+        <span class="world-type">5★ Physical Destruction</span>
+      </div>
+    </div>
+
+    <!-- Gepard -->
+    <div class="character-card" data-path="preservation" data-element="ice">
+      <div class="card-image-container">
+        <img src="/images/Characters/gepard.jpg" alt="Gepard">
+        <div class="path-badge">
+          <img src="/images/paths/preservation.png" alt="Path of Preservation">
+        </div>
+        <div class="element-badge" style="position: absolute; top: 15px; left: 15px;">
+          <img src="/images/Characters/Elements/element_ice.png" alt="Ice Element" style="width: 30px; height: 30px;">
+        </div>
+      </div>
+      <div class="card-content">
+        <h2>Gepard</h2>
+        <p>The noble captain of the Silvermane Guards in Belobog. His defensive capabilities and ice shields make him an excellent tank.</p>
+        <span class="world-type">5★ Ice Preservation</span>
+      </div>
     </div>
   </div>
 </main>
@@ -66,6 +260,3 @@
 <footer>
   <p>&copy; 2025 Honkai Star Rail Fan Site. All rights reserved.</p>
 </footer>
-
-</body>
-</html>
