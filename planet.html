@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/index.css">
+  <script src="/javascript/Pscript.js"></script>
   <title>Worlds - Honkai Star Rail</title>
 </head>
 <body>
@@ -38,38 +39,62 @@
   <h1 class="page-title">Explore the Worlds</h1>
 
   <div class="worlds-grid">
-    <div class="world-card">
+    <div class="world-card" data-world="jarilo">
       <img src="/images/logos/Jarilo-VI.png" alt="Jarilo-VI">
       <h2>Jarilo-VI</h2>
       <p>Jarilo-VI is a frosted-over, previously isolated planet, originally cut off from the rest of the cosmos due to a planetwide Eternal Freeze.</p>
+      <button class="view-details-btn">View Details</button>
     </div>
 
-    <div class="world-card">
+    <div class="world-card" data-world="luofu">
       <img src="/images/logos/Luofu.png" alt="Xianzhou Luofu">
       <h2>Xianzhou Luofu</h2>
       <p>The Xianzhou Luofu is one of the six Flagships owned by the Hexafleet of the Xianzhou Alliance. It sails like a one-way arrow through the galaxy, with the goal of eradicating the Denizens of Abundance.</p>
+      <button class="view-details-btn">View Details</button>
     </div>
 
-    <div class="world-card">
+    <div class="world-card" data-world="herta">
       <img src="/images/logos/Space_Station.png" alt="Herta Space Station">
       <h2>Herta Space Station</h2>
-      <p>Herta Space Station is a space station founded by Herta as well as an advanced research station where the trailblazer’s journey begins.</p>
+      <p>Herta Space Station is a space station founded by Herta as well as an advanced research station where the trailblazer's journey begins.</p>
+      <button class="view-details-btn">View Details</button>
     </div>
 
-    <div class="world-card">
+    <div class="world-card" data-world="penacony">
       <img src="/images/logos/Penacony.png" alt="Penacony">
       <h2>Penacony</h2>
       <p>Penacony, also known as the "Planet of Festivities", is a planet administered by The Family in the Asdana star system.</p>
+      <button class="view-details-btn">View Details</button>
     </div>
 
-    <div class="world-card">
+    <div class="world-card" data-world="amphoreus">
       <img src="/images/logos/Amphoreus.png" alt="Amphoreus">
       <h2>Amphoreus</h2>
       <p>Amphoreus, also known as The Eternal Land, is an isolated world governed by the Chrysos Heirs, and was once in a state of chaos until the Titans emerged from the remnants of the gods. The "Eternal Holy City" Okhema, serves as the last refuge for its people and their allies.</p>
+      <button class="view-details-btn">View Details</button>
     </div>
     
   </div>
 </main>
+
+<div id="worldModal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <div class="world-modal-header">
+      <img src="" alt="" class="world-modal-image" id="modalImage">
+      <div class="world-modal-title">
+        <h2 id="modalTitle"></h2>
+        <p id="modalSubtitle"></p>
+      </div>
+    </div>
+    <div class="world-modal-body">
+      <div class="world-description" id="modalDescription"></div>
+      <div class="world-features" id="modalFeatures">
+        <!-- Features will be added dynamically -->
+      </div>
+    </div>
+  </div>
+</div>
 
 <footer class="site-footer">
   <div class="footer-logos">
