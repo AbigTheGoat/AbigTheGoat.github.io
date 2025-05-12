@@ -1,249 +1,307 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="css/news.css">
-    <title>News - Honkai Star Rail</title>
-    <script src="/javascript/Nscript.js"></script>
-</head>
-<body>
-<header>
-    <div class="menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-    <nav>
-        <ul class="navbar">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Character.html">Characters</a></li>
-            <li><a href="news.html">News</a></li>
-            <li><a href="planet.html">Worlds</a></li>
-            <li><a href="paths.html">Paths</a></li>  
-        </ul>
-    </nav>
-    <div class="logo-container">
-        <a href="https://hsr.hoyoverse.com/en-us/home" target="_blank">
-            <img src="/images/logos/HSR Logo.png" alt="Honkai Star Rail Logo" class="logo">
-        </a>
-    </div>
-    <div class="menu-overlay"></div>
-</header>
-
-<main class="news-page">
-        <div class="news-header">
-            <h1 class="news-title">Latest Updates</h1>
-            <p class="news-subtitle">Stay up to date with the latest news, events, and updates from the universe of Honkai: Star Rail</p>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/news.css">
+        <title>News - Honkai Star Rail</title>
+        <script src="/javascript/Nscript.js"></script>
+    </head>
+    <body>
+    <header>
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-
-        <div class="news-filters">
-            <button class="filter-btn active">All News</button>
-            <button class="filter-btn">Game Updates</button>
-            <button class="filter-btn">Events</button>
-            <button class="filter-btn">Character Showcases</button>
-            <button class="filter-btn">Developer Notes</button>
-            <button class="filter-btn">Community</button>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Character.html">Characters</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="planet.html">Worlds</a></li>
+                <li><a href="paths.html">Paths</a></li>  
+            </ul>
+        </nav>
+        <div class="logo-container">
+            <a href="https://hsr.hoyoverse.com/en-us/home" target="_blank">
+                <img src="/images/logos/HSR Logo.png" alt="Honkai Star Rail Logo" class="logo">
+            </a>
         </div>
+        <div class="menu-overlay"></div>
+    </header>
 
-        <div class="news-container">
-            <div class="featured-news">
-                <div class="featured-news-card">
-                    <div class="featured-img-container">
-                        <img src="images/backgrounds/fallatdawn.jpg" alt="Featured News" class="featured-img">
-                    </div>
-                    <div class="featured-content">
-                        <span class="featured-category">Version Update</span>
-                        <div class="featured-date">May 9, 2025</div>
-                        <h2 class="featured-title">Version 3.3 Trailer - "The Fall at Dawn's Rise" | Honkai: Star Rail</h2>
-                        <p class="featured-excerpt">Realms where even gods dare not tread shall become routes charted and anchored by mortals.</p>
-                        <a href="#" class="featured-read-more" >
-                            Video. 
-                            <svg class="read-more-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
+    <main class="news-page">
+            <div class="news-header">
+                <h1 class="news-title">Latest Updates</h1>
+                <p class="news-subtitle">Stay up to date with the latest news, events, and updates from the universe of Honkai: Star Rail</p>
             </div>
 
-            <h2 class="section-title">Recent News</h2>
-
-            <div class="news-grid">
-                <!-- News Card 1 -->
-                <div class="news-card">
-                    <div class="news-img-container">
-                        <img src="/images/backgrounds/anaxanews.jpg" alt="News Image" class="news-img">
-                        <span class="news-category">Character</span>
-                    </div>
-                    <div class="news-content">
-                        <div class="news-date">April 25, 2025</div>
-                        <h3 class="news-card-title">Anaxa Trailer - "The Sin of Pride" | Honkai: Star Rail</h3>
-                        <p class="news-excerpt">Yes. I, Anaxagoras, proclaim it with absolute certainty!</p>
-                        <a href="#" class="read-more">
-                            Video.
-                            <svg class="read-more-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- News Card 2 -->
-                <div class="news-card">
-                    <div class="news-img-container">
-                        <img src="/images/backgrounds/tribs.png" alt="News Image" class="news-img">
-                        <span class="news-category">Event</span>
-                    </div>
-                    <div class="news-content">
-                        <div class="news-date">April 24, 2025</div>
-                        <h3 class="news-card-title">Honkai: Star Rail Two-Year Anniversary Special Animation: On the Journey</h3>
-                        <p class="news-excerpt">Behold the infinite possibilities of the vast cosmos. The silver rail has extended unto the stars...Now is the time to Trailblaze! May your journey be fruitful!</p>
-                        <a href="#" class="read-more">
-                            Video.
-                            <svg class="read-more-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- News Card 3 -->
-                <div class="news-card">
-                    <div class="news-img-container">
-                        <img src="/images/backgrounds/castoricenews.jpg" alt="News Image" class="news-img">
-                        <span class="news-category">Game Update</span>
-                    </div>
-                    <div class="news-content">
-                        <div class="news-date">March 28, 2025</div>
-                        <h3 class="news-card-title">Version 3.2 Trailer: "Through the Petals in the Land of Repose" | Honkai: Star Rail</h3>
-                        <p class="news-excerpt">Those from the past rush by in a fleeting lifetime, those from the future stretch into an endless night — oh, lost wanderer, cross that uncharted River of Souls, and step into the blooming fields of Antila flowers.</p>
-                        <a href="#" class="read-more">
-                            Video.
-                            <svg class="read-more-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- News Card 4 -->
-                <div class="news-card">
-                    <div class="news-img-container">
-                        <img src="/images/backgrounds/sundaynews.jpg" alt="News Image" class="news-img">
-                        <span class="news-category">Community</span>
-                    </div>
-                    <div class="news-content">
-                        <div class="news-date">April 28, 2025</div>
-                        <h3 class="news-card-title">Honkai: Star Rail Concert Animated Commercial: "Filming in Progress""</h3>
-                        <p class="news-excerpt">The Cosmos Resonates for You!</p>
-                        <a href="#" class="read-more">
-                            Video.
-                            <svg class="read-more-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- News Card 5 -->
-                <div class="news-card">
-                    <div class="news-img-container">
-                        <img src="/images/backgrounds/mydeinews.jpg" alt="News Image" class="news-img">
-                        <span class="news-category">Developer Notes</span>
-                    </div>
-                    <div class="news-content">
-                        <div class="news-date">March 12, 2025</div>
-                        <h3 class="news-card-title">Keeping Up With Star Rail — "Mydei: 'Performance Boosters' Don't Exist in a Kremnoan's Dictionary" | Honkai: Star Rail</h3>
-                        <p class="news-excerpt">Breaking news from the fitness community: Mr. Mydei has been elected as the Amphorean Public Fitness Ambassador."</p>
-                        <a href="#" class="read-more">
-                            Video.
-                            <svg class="read-more-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- News Card 6 -->
-                <div class="news-card">
-                    <div class="news-img-container">
-                        <img src="/images/backgrounds/castoricenewsT.jpg" alt="News Image" class="news-img">
-                        <span class="news-category">Community</span>
-                    </div>
-                    <div class="news-content">
-                        <div class="news-date">April 5, 2025</div>
-                        <h3 class="news-card-title">Golden Epic PV: "Life Awakens from the Night" | Honkai: Star Rail</h3>
-                        <p class="news-excerpt">—Who will write the poem called "Castorice"</p>
-                        <a href="#" class="read-more">
-                            Video.
-                            <svg class="read-more-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
+            <div class="news-filters">
+                <button class="filter-btn active">All News</button>
+                <button class="filter-btn">Game Updates</button>
+                <button class="filter-btn">Events</button>
+                <button class="filter-btn">Character Showcases</button>
+                <button class="filter-btn">Developer Notes</button>
+                <button class="filter-btn">Community</button>
             </div>
 
-            <div class="pagination">
-                <button class="page-btn page-arrow">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </button>
-                <button class="page-btn active">1</button>
-                <button class="page-btn">2</button>
-                <button class="page-btn">3</button>
-                <button class="page-btn">4</button>
-                <button class="page-btn page-arrow">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </button>
+            <div class="news-container">
+                <div class="featured-news">
+                    <div class="featured-news-card">
+                        <div class="featured-img-container">
+                            <img src="images/backgrounds/fallatdawn.jpg" alt="Featured News" class="featured-img">
+                        </div>
+                        <div class="featured-content">
+                            <span class="featured-category">Game Updates</span>
+                            <div class="featured-date">May 9, 2025</div>
+                            <h2 class="featured-title">Version 3.3 Trailer - "The Fall at Dawn's Rise" | Honkai: Star Rail</h2>
+                            <p class="featured-excerpt">Realms where even gods dare not tread shall become routes charted and anchored by mortals.</p>
+                            <a href="#" class="featured-read-more" >
+                                Video. 
+                                <svg class="read-more-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="section-title">Recent News</h2>
+
+                <div class="news-grid">
+                    <!-- News Card 1 -->
+                    <div class="news-card">
+                        <div class="news-img-container">
+                            <img src="/images/backgrounds/anaxanews.jpg" alt="News Image" class="news-img">
+                            <span class="news-category">Character Showcases</span>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-date">April 25, 2025</div>
+                            <h3 class="news-card-title">Anaxa Trailer - "The Sin of Pride" | Honkai: Star Rail</h3>
+                            <p class="news-excerpt">Yes. I, Anaxagoras, proclaim it with absolute certainty!</p>
+                            <a href="#" class="read-more">
+                                Video.
+                                <svg class="read-more-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- News Card 2 -->
+                    <div class="news-card">
+                        <div class="news-img-container">
+                            <img src="/images/backgrounds/tribs.png" alt="News Image" class="news-img">
+                            <span class="news-category">Events</span>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-date">April 24, 2025</div>
+                            <h3 class="news-card-title">Honkai: Star Rail Two-Year Anniversary Special Animation: On the Journey</h3>
+                            <p class="news-excerpt">Behold the infinite possibilities of the vast cosmos. The silver rail has extended unto the stars...Now is the time to Trailblaze! May your journey be fruitful!</p>
+                            <a href="#" class="read-more">
+                                Video.
+                                <svg class="read-more-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- News Card 3 -->
+                    <div class="news-card">
+                        <div class="news-img-container">
+                            <img src="/images/backgrounds/castoricenews.jpg" alt="News Image" class="news-img">
+                            <span class="news-category">Game Update</span>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-date">March 28, 2025</div>
+                            <h3 class="news-card-title">Version 3.2 Trailer: "Through the Petals in the Land of Repose" | Honkai: Star Rail</h3>
+                            <p class="news-excerpt">Those from the past rush by in a fleeting lifetime, those from the future stretch into an endless night — oh, lost wanderer, cross that uncharted River of Souls, and step into the blooming fields of Antila flowers.</p>
+                            <a href="#" class="read-more">
+                                Video.
+                                <svg class="read-more-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- News Card 4 -->
+                    <div class="news-card">
+                        <div class="news-img-container">
+                            <img src="/images/backgrounds/sundaynews.jpg" alt="News Image" class="news-img">
+                            <span class="news-category">Community</span>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-date">April 28, 2025</div>
+                            <h3 class="news-card-title">Honkai: Star Rail Concert Animated Commercial: "Filming in Progress""</h3>
+                            <p class="news-excerpt">The Cosmos Resonates for You!</p>
+                            <a href="#" class="read-more">
+                                Video.
+                                <svg class="read-more-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- News Card 5 -->
+                    <div class="news-card">
+                        <div class="news-img-container">
+                            <img src="/images/backgrounds/mydeinews.jpg" alt="News Image" class="news-img">
+                            <span class="news-category">Developer Notes</span>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-date">March 12, 2025</div>
+                            <h3 class="news-card-title">Keeping Up With Star Rail — "Mydei: 'Performance Boosters' Don't Exist in a Kremnoan's Dictionary" | Honkai: Star Rail</h3>
+                            <p class="news-excerpt">Breaking news from the fitness community: Mr. Mydei has been elected as the Amphorean Public Fitness Ambassador."</p>
+                            <a href="#" class="read-more">
+                                Video.
+                                <svg class="read-more-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- News Card 6 -->
+                    <div class="news-card">
+                        <div class="news-img-container">
+                            <img src="/images/backgrounds/castoricenewsT.jpg" alt="News Image" class="news-img">
+                            <span class="news-category">Community</span>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-date">April 5, 2025</div>
+                            <h3 class="news-card-title">Golden Epic PV: "Life Awakens from the Night" | Honkai: Star Rail</h3>
+                            <p class="news-excerpt">—Who will write the poem called "Castorice"</p>
+                            <a href="#" class="read-more">
+                                Video.
+                                <svg class="read-more-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                
+                    <!-- News Card 7 -->
+                    <div class="news-card">
+                        <div class="news-img-container">
+                            <img src="/images/backgrounds/MarchNews.png" alt="News Image" class="news-img">
+                            <span class="news-category">Events</span>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-date">May 9, 2025</div>
+                            <h3 class="news-card-title">New Honkai: Star Rail Merchandise Available on Amazon!</h3>
+                            <p class="news-excerpt">New merchandise is now available on Amazon, Trailblazers! This time, we're bringing you a bunch of March 7th-themed products, including a shoulder bag, a beret, and a variety of accessories.</p>
+                            <a href="#" class="read-more" data-url="https://www.amazon.com/stores/HoYoverse/page/31CEA33F-BFC6-4B13-8201-854E111AF228?maas=maas_adg_39AB1C81C2CC1BC8FD871FB59AF91B8A_afap_abs&ref_=cm_sw_r_ud_ast_store_907EEPXN1SH708JV7XZP&tag=maas">
+                                Link.
+                                <svg class="read-more-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-lienjoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- News Card 8 -->
+                    <div class="news-card">
+                        <div class="news-img-container">
+                            <img src="/images/backgrounds/AnaxaNewsK.jpg" alt="News Image" class="news-img">
+                            <span class="news-category">Developer Notes</span>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-date">April 23, 2025</div>
+                            <h3 class="news-card-title">Keeping up with Star Rail — Anaxa: Hahahahahaha</h3>
+                            <p class="news-excerpt">Yes. I, Anaxagoras, proclaim it with absolute certainty!</p>
+                            <a href="#" class="read-more">
+                            Video.
+                                <svg class="read-more-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-lienjoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                
+
+                <!-- News Card 9 -->
+                    <div class="news-card">
+                        <div class="news-img-container">
+                            <img src="/images/backgrounds/CastoriceT.jpg" alt="News Image" class="news-img">
+                            <span class="news-category">Character Showcases</span>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-date">April 8, 2025</div>
+                            <h3 class="news-card-title">Castorice Trailer — "Epitaph" | Honkai: Star Rail</h3>
+                            <p class="news-excerpt">Life and death is a journey. When a butterfly rests on that dead branch, the withered will be reborn again.</p>
+                            <a href="#" class="read-more">
+                            Video.
+                                <svg class="read-more-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-lienjoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pagination">
+                    <button class="page-btn page-arrow" id="prevPage">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button class="page-btn active" data-page="1">1</button>
+                    <button class="page-btn" data-page="2">2</button>
+                    <button class="page-btn" data-page="3">3</button>
+                    <button class="page-btn" data-page="4">4</button>
+                    <button class="page-btn page-arrow" id="nextPage">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
             </div>
+        </main>
+
+    <footer class="site-footer">
+        <div class="footer-logos">
+            <img src="/images/logos/HSR Logo.png" alt="Star Rail Logo" class="footer-logo">
+            <img src="/images/logos/HSRworldtour.png" alt="World Tour Logo" class="footer-logo">
         </div>
-    </main>
+            
+        <div class="footer-nav">
+            <a href="https://hsr.hoyoverse.com/en-us/company/privacy">Privacy Policy</a>
+            <a href="https://hsr.hoyoverse.com/en-us/company/terms">Terms of Service</a>
+            <a href="https://www.hoyoverse.com/en-us/about-us?utm_source=hsr&utm_medium=footer">About Us</a>
+            <a href="https://cs.hoyoverse.com/static/hoyoverse-new-csc-service-hall-fe/index.html?page_id=19&login_type=visitor&game_biz=platform_hyvpass&lang=en-us&utm_source=genshin&utm_medium=footer">Help Center</a>
+        </div>
+            
+        <div class="footer-rating">
+            <img src="/images/logos/rating.png" alt="ESRB Rating" class="rating-logo">
+        </div>
+            
+        <div class="footer-legal">
+            <p>"PlayStation Family Mark", "PlayStation" and "PS5 logo" are registered trademarks or trademarks of Sony Interactive Entertainment Inc.</p>
+            <p>Epic, Epic Games, Epic Games Store, the Epic Games Store logo, and Epic Online Services are trademarks and/or registered trademarks of Epic Games. All other trademarks are the property of their respective owners.</p>
+        </div>
+            
+        <div class="footer-company">
+            <img src="/images/logos/Hoyoverse.png" alt="HoYoverse Logo" class="company-logo"></img>
+            <p>&copy; 2025 Honkai Star Rail Fan Site. All rights reserved.</p>
+        </div>
+    </footer>
 
-<footer class="site-footer">
-    <div class="footer-logos">
-        <img src="/images/logos/HSR Logo.png" alt="Star Rail Logo" class="footer-logo">
-        <img src="/images/logos/HSRworldtour.png" alt="World Tour Logo" class="footer-logo">
+    <!-- Modal Structure -->
+    <div id="newsModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <div class="modal-video-container">
+        <video id="modalVideo" width="100%" height="400" controls>
+        <source src="" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+        </div>
     </div>
-        
-    <div class="footer-nav">
-        <a href="https://hsr.hoyoverse.com/en-us/company/privacy">Privacy Policy</a>
-        <a href="https://hsr.hoyoverse.com/en-us/company/terms">Terms of Service</a>
-        <a href="https://www.hoyoverse.com/en-us/about-us?utm_source=hsr&utm_medium=footer">About Us</a>
-        <a href="https://cs.hoyoverse.com/static/hoyoverse-new-csc-service-hall-fe/index.html?page_id=19&login_type=visitor&game_biz=platform_hyvpass&lang=en-us&utm_source=genshin&utm_medium=footer">Help Center</a>
     </div>
-        
-    <div class="footer-rating">
-        <img src="/images/logos/rating.png" alt="ESRB Rating" class="rating-logo">
-    </div>
-        
-    <div class="footer-legal">
-        <p>"PlayStation Family Mark", "PlayStation" and "PS5 logo" are registered trademarks or trademarks of Sony Interactive Entertainment Inc.</p>
-        <p>Epic, Epic Games, Epic Games Store, the Epic Games Store logo, and Epic Online Services are trademarks and/or registered trademarks of Epic Games. All other trademarks are the property of their respective owners.</p>
-    </div>
-        
-    <div class="footer-company">
-        <img src="/images/logos/Hoyoverse.png" alt="HoYoverse Logo" class="company-logo"></img>
-        <p>&copy; 2025 Honkai Star Rail Fan Site. All rights reserved.</p>
-    </div>
-</footer>
 
-<!-- Modal Structure -->
-<div id="newsModal" class="modal">
-  <div class="modal-content">
-    <span class="close-btn">&times;</span>
-    <div class="modal-video-container">
-    <video id="modalVideo" width="100%" height="400" controls>
-    <source src="" type="video/mp4">
-    Your browser does not support the video tag.
-    </video>
-    </div>
-  </div>
-</div>
-
-</body>
-</html>
+    </body>
+    </html>
