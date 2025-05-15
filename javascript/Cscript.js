@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 const characters = [
-    { name: "Acheron", rarity: "5 Star", path: "nihility", element: "lightning", description: "A member of the Stellaron Hunters who wields a long blade and claims to be a Galaxy Ranger." },
+    { name: "Acheron", rarity: "5 Star", path: "nihility", element: "lightning", description: "A drifter claiming to be a Galaxy Ranger, though she is later revealed to be a Self-Annihilator. She walks the cosmos alone, carrying with her a long sword." },
     { name: "Aglaea", rarity: "5 Star", path: "remembrance", element: "lightning", description: "The Chrysos Heir bearing the Coreflame of Romance, able to summon heroes to embark on new journeys." },
     { name: "Anaxa", rarity: "5 Star", path: "erudition", element: "wind", description: "Known as Anaxagoras the blasphemer within the Grove of Epiphany." },
     { name: "Argenti", rarity: "5 Star", path: "erudition", element: "physical", description: "A knight from the Knights of Beauty who follows the Path of Beauty with unwavering dedication." },
