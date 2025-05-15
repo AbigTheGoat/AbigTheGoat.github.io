@@ -7,8 +7,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
-
 const characters = [
     { name: "Acheron", rarity: "5 Star", path: "nihility", element: "lightning", description: "A mysterious figure who wields the power of lightning with deadly precision." },
     { name: "Aglaea", rarity: "5 Star", path: "remembrance", element: "lightning", description: "A character who draws strength from memories, channeling lightning to overwhelm enemies." },

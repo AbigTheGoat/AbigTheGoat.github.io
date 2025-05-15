@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const cardTitle = card.querySelector('.news-card-title').textContent.trim().toLowerCase();
         let videoToPlay = null;
         
-        // Match title keywords to videos - FIXED CASTORICE MATCHING
+        // Match title keywords to videos
         if (cardTitle.includes('anaxa') && cardTitle.includes('keeping up')) {
           videoToPlay = videoPathsMap['anaxa-keeping-up'];
         } else if (cardTitle.includes('anaxa') && cardTitle.includes('trailer')) {

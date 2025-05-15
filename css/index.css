@@ -1,49 +1,57 @@
+/* Base Styles */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box; /* Include padding and border in element width */
 }
 
+/* Document Setup */
 html, body {
   width: 100%;
   height: 100%;
-  scroll-behavior: smooth;
-  overflow-x: hidden;
+  scroll-behavior: smooth; /* Enable smooth scrolling */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
+/* Theme Settings */
 body {
-  background-color: #050510;
+  background-color: #050510; /* Dark background */
   font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: white;
 }
 
+/* Header Navigation */
 header {
-  position: sticky;
+  position: sticky; /* Keeps header visible when scrolling */
   top: 0;
   width: 100%;
   height: 70px;
-  background: rgba(10, 10, 25, 0.8);
-  backdrop-filter: blur(10px);
+  background: rgba(10, 10, 25, 0.8); /* Semi-transparent */
+  backdrop-filter: blur(10px); /* Blur effect */
   display: flex;
   align-items: center;
   padding: 0 60px;
-  z-index: 100;
+  z-index: 100; /* Above other content */
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-section{
+
+/* Full-height Sections */
+section {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  scroll-snap-align: start;
+  scroll-snap-align: start; /* For scroll snapping */
 }
 
+/* Scroll Snap Container */
 .container {
-  scroll-snap-type: y proximity;
+  scroll-snap-type: y proximity; /* Scroll snap on Y axis */
   overflow-y: scroll;
   height: 100vh;
 }
 
+/* Logo Positioning */
 .logo-container {
   display: flex;
   align-items: center;
@@ -56,7 +64,7 @@ section{
   height: 60px;
 }
 
-
+/* Mobile Menu Button (Hidden on Desktop) */
 .menu-toggle {
   display: none;
   flex-direction: column;
@@ -67,6 +75,7 @@ section{
   z-index: 200;
 }
 
+/* Mobile Menu Bars */
 .menu-toggle span {
   display: block;
   height: 3px;
@@ -76,15 +85,17 @@ section{
   transition: all 0.3s ease;
 }
 
-/* Additional body class to prevent scrolling when menu is open */
+/* Prevent Scrolling when Mobile Menu Open */
 body.no-scroll {
   overflow: hidden;
 }
 
+/* Navigation Container */
 nav {
-  margin-right: auto; /* Ensures nav stays left and logo can go right */
+  margin-right: auto; /* Keep nav on left */
 }
 
+/* Navigation Menu */
 .navbar {
   list-style: none;
   display: flex;
@@ -93,6 +104,7 @@ nav {
   padding-left: 0;
 }
 
+/* Hide Mobile Menu Button on Desktop */
 .menu-toggle {
   display: none;
   flex-direction: column;
@@ -107,6 +119,7 @@ nav {
   list-style: none;
 }
 
+/* Navigation Links */
 .navbar a {
   color: white;
   text-decoration: none;
@@ -115,39 +128,41 @@ nav {
   transition: color 0.3s ease;
 }
 
+/* Link Hover Effect */
 .navbar a:hover {
-  color: #9bc9ff;
+  color: #9bc9ff; /* Light blue */
 }
 
+/* Mobile Responsive Layout */
 @media (max-width: 768px) {
   header {
     padding: 0 20px;
-    justify-content: space-between; /* Ensure proper spacing on mobile */
+    justify-content: space-between;
   }
   
+  /* Show Mobile Menu Button */
   .menu-toggle {
     display: flex;
   }
   
   .logo-container {
-    /* Keep logo on right for mobile too */
     justify-content: flex-end;
     margin-left: auto;
   }
   
   .logo {
-    height: 40px;
+    height: 40px; /* Smaller logo */
   }
   
-  /* Nav will be hidden in side panel on mobile */
   nav {
     margin-right: 0;
   }
   
+  /* Mobile Sidebar Navigation */
   .navbar {
     position: fixed;
     top: 0;
-    left: -100%;
+    left: -100%; /* Hidden off-screen */
     width: 250px;
     height: 100vh;
     background: rgba(10, 10, 25, 0.95);
@@ -155,32 +170,36 @@ nav {
     flex-direction: column;
     justify-content: center;
     padding: 50px 0;
-    transition: left 0.3s ease;
+    transition: left 0.3s ease; /* Sidebar animation */
     z-index: 150;
     border-right: 1px solid rgba(255, 255, 255, 0.2);
     gap: 40px;
   }
 }
 
+/* Hero Section */
 .home {
   position: relative;
   overflow: hidden;
   height: 100vh;
 }
 
+/* Fullscreen Video Background */
 .IntroVid {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; /* Cover viewport with video */
   position: absolute;
   top: 0;
   left: 0;
 }
 
+/* Hero Text */
 .intro-text {
   padding-top: 70px;
 }
 
+/* Background Image Section */
 .hsr-background-section {
   background-image: url("/images/backgrounds/hsrbg.jpg");
   background-size: cover;
@@ -193,18 +212,20 @@ nav {
   align-items: center;
 }
 
+/* Main Content Container */
 .main {
   position: relative;
-  z-index: 1;
+  z-index: 1; /* Above background */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 50px; /* Adds space between video and text */
+  gap: 50px;
   width: 100%;
   max-width: 1200px;
 }
 
+/* Video Container with Glass Effect */
 .video-container {
   width: 80%;
   max-width: 1000px;
@@ -213,18 +234,20 @@ nav {
   border-radius: 15px;
   padding: 30px;
   border: 1px solid rgba(155, 201, 255, 0.3);
-  box-shadow: 0 0 30px rgba(155, 201, 255, 0.2);
+  box-shadow: 0 0 30px rgba(155, 201, 255, 0.2); /* Glow effect */
   animation: fadeIn 1.5s ease-in-out;
 }
 
+/* Video Title */
 .video-title {
   text-align: center;
   font-size: 32px;
   margin-bottom: 20px;
   color: #9bc9ff;
-  text-shadow: 0 0 10px rgba(155, 201, 255, 0.5);
+  text-shadow: 0 0 10px rgba(155, 201, 255, 0.5); /* Glow effect */
 }
 
+/* Responsive Video Container (16:9) */
 .video-wrapper {
   position: relative;
   width: 100%;
@@ -237,6 +260,7 @@ nav {
   margin-bottom: 20px;
 }
 
+/* Embedded Video */
 .video-wrapper video {
   position: absolute;
   top: 0;
@@ -247,6 +271,7 @@ nav {
   object-fit: cover;
 }
 
+/* Video Description */
 .video-description {
   text-align: center;
   font-size: 16px;
@@ -255,6 +280,7 @@ nav {
   margin: 0 auto;
 }
 
+/* Additional Main Content */
 .main {
   position: relative;
   z-index: 1;
@@ -263,18 +289,21 @@ nav {
   align-items: center;
 }
 
+/* Next Page Section */
 .next-page {
   position: relative;
   height: 100vh;
   width: 100%;
 }
 
+/* Background Image */
 .HSR_background {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
+/* Floating Element Container */
 .floating-elements {
   position: absolute;
   top: 0;
@@ -289,19 +318,22 @@ nav {
   padding: 0 60px;
 }
 
+/* Title Container */
 .floating-title {
   text-align: center;
   margin-bottom: 50px;
   animation: fadeIn 1.5s ease-in-out;
 }
 
+/* Main Title */
 .floating-title h1 {
   font-size: 60px;
   font-weight: 700;
   margin-bottom: 10px;
-  text-shadow: 0 0 15px rgba(155, 201, 255, 0.8);
+  text-shadow: 0 0 15px rgba(155, 201, 255, 0.8); /* Glow effect */
 }
 
+/* Subtitle */
 .floating-title p {
   font-size: 24px;
   font-weight: 300;
@@ -309,6 +341,7 @@ nav {
   text-shadow: 0 0 10px rgba(155, 201, 255, 0.5);
 }
 
+/* Download Section with Glass Effect */
 .download-platforms {
   display: flex;
   flex-direction: column;
@@ -320,13 +353,15 @@ nav {
   border-radius: 15px;
   padding: 30px;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  animation: slideUp 1s ease-in-out 0.5s both;
+  animation: slideUp 1s ease-in-out 0.5s both; /* Delayed animation */
 }
 
+/* QR Code Container */
 .qr-code {
   margin-bottom: 20px;
 }
 
+/* QR Code Image */
 .qr-code img {
   height: 100px;
   width: auto;
@@ -334,6 +369,7 @@ nav {
   border-radius: 8px;
 }
 
+/* Download Buttons Container */
 .platform-buttons {
   display: flex;
   flex-wrap: wrap;
@@ -342,6 +378,7 @@ nav {
   margin-bottom: 20px;
 }
 
+/* Platform Button */
 .platform-btn {
   display: flex;
   align-items: center;
@@ -354,17 +391,20 @@ nav {
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+/* Button Hover Effect */
 .platform-btn:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5px); /* Lift effect */
   background: rgba(155, 201, 255, 0.2);
   box-shadow: 0 5px 15px rgba(155, 201, 255, 0.3);
 }
 
+/* Platform Button Image */
 .platform-btn img {
   height: 100%;
   width: auto;
 }
 
+/* Rating Image */
 .rating img {
   height: 80px;
   width: auto;
@@ -372,12 +412,8 @@ nav {
 
 /* Animations */
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 @keyframes slideUp {
@@ -391,8 +427,9 @@ nav {
   }
 }
 
-
+/* Mobile Responsive Styles */
 @media (max-width: 768px) {
+  /* Mobile Title Sizes */
   .floating-title h1 {
     font-size: 40px;
   }
@@ -401,6 +438,7 @@ nav {
     font-size: 18px;
   }
   
+  /* Mobile Platform Buttons */
   .platform-buttons {
     flex-direction: column;
     align-items: center;
@@ -409,6 +447,8 @@ nav {
   .platform-btn {
     width: 80%;
   }
+  
+  /* Mobile Video Container */
   .video-container {
     width: 95%;
     padding: 20px;
@@ -425,29 +465,32 @@ nav {
   .main {
     gap: 30px;
   }
-.modal-content {
+  
+  /* Mobile Modal */
+  .modal-content {
     width: 90%;
     margin: 10% auto;
     padding: 20px;
   }
       
-.world-modal-header {
+  .world-modal-header {
     flex-direction: column;
     text-align: center;
   }
       
-.world-modal-image {
+  .world-modal-image {
     margin-right: 0;
     margin-bottom: 15px;
   }
       
-.world-features {
+  .world-features {
     flex-direction: column;
   }
 }
 
+/* Modal Overlay */
 .modal {
-    display: none;
+    display: none; /* Hidden initially */
     position: fixed;
     z-index: 1000;
     left: 0;
@@ -459,6 +502,7 @@ nav {
     backdrop-filter: blur(5px);
 }
     
+/* Modal Content */
 .modal-content {
     background-color: rgba(20, 20, 40, 0.95);
     margin: 5% auto;
@@ -472,6 +516,7 @@ nav {
     position: relative;
 }
     
+/* Close Button */
 .close-modal {
     position: absolute;
     top: 15px;
@@ -483,11 +528,13 @@ nav {
     transition: color 0.3s ease;
 }
     
+/* Close Button Hover */
 .close-modal:hover {
     color: white;
     text-shadow: 0 0 10px rgba(155, 201, 255, 0.8);
 }
     
+/* Modal Header */
 .world-modal-header {
     display: flex;
     align-items: center;
@@ -496,7 +543,8 @@ nav {
     padding-bottom: 15px;
 }
     
-    .world-modal-image {
+/* Modal Image */
+.world-modal-image {
     width: 100px;
     height: 100px;
     object-fit: contain;
@@ -505,21 +553,25 @@ nav {
     border: 2px solid rgba(155, 201, 255, 0.3);
 }
     
+/* Modal Title */
 .world-modal-title h2 {
     font-size: 32px;
     margin-bottom: 5px;
     color: #9bc9ff;
 }
     
+/* Modal Subtitle */
 .world-modal-title p {
     font-size: 16px;
     color: #eaeaea;
 }
     
+/* Modal Body */
 .world-modal-body {
     margin-top: 20px;
 }
     
+/* Modal Description */
 .world-description {
     font-size: 16px;
     line-height: 1.7;
@@ -527,6 +579,7 @@ nav {
     color: #eaeaea;
 }
     
+/* Features Grid */
 .world-features {
     display: flex;
     flex-wrap: wrap;
@@ -534,6 +587,7 @@ nav {
     margin-top: 25px;
 }
     
+/* Feature Box */
 .world-feature {
     background-color: rgba(155, 201, 255, 0.1);
     border: 1px solid rgba(155, 201, 255, 0.2);
@@ -543,35 +597,38 @@ nav {
     min-width: 200px;
 }
     
+/* Feature Title */
 .world-feature h3 {
     font-size: 18px;
     margin-bottom: 10px;
     color: #9bc9ff;
 }
     
+/* Feature Description */
 .world-feature p {
     font-size: 14px;
     color: #eaeaea;
 }
     
-  /* Animation */
-  @keyframes modalFadeIn {
+/* Modal Animation */
+@keyframes modalFadeIn {
     from {
       opacity: 0;
       transform: translateY(-30px);
-  }
+    }
     to {
       opacity: 1;
       transform: translateY(0);
     }
 }
     
-    /* Add a button to the world cards */
+/* Clickable World Cards */
 .world-card {
     cursor: pointer;
     position: relative;
 }
     
+/* Details Button */
 .view-details-btn {
     position: absolute;
     bottom: 15px;
@@ -585,24 +642,27 @@ nav {
     font-size: 14px;
     cursor: pointer;
     transition: all 0.3s ease;
-    opacity: 0;
+    opacity: 0; /* Hidden initially */
 }
     
+/* Show Button on Hover */
 .world-card:hover .view-details-btn {
     opacity: 1;
     bottom: 20px;
 }
     
+/* Button Hover Effect */
 .view-details-btn:hover {
     background-color: rgba(155, 201, 255, 0.4);
     color: white;
 }
     
-    /* Adjust world card padding for button */
+/* Card Text Padding */
 .world-card p {
-      padding-bottom: 40px;
+    padding-bottom: 40px;
 }
 
+/* Footer */
 footer {
   background-color: rgba(10, 10, 25, 0.9);
   color: white;
@@ -614,6 +674,7 @@ footer {
   z-index: 2;
 }
 
+/* Site Footer */
 .site-footer {
   background-color: #000;
   color: #fff;
@@ -621,19 +682,23 @@ footer {
   text-align: center;
 }
 
+/* Footer Logos Container */
 .footer-logos {
   margin-bottom: 1.5rem;
 }
 
+/* Footer Logo Size */
 .footer-logo {
   height: 40px;
   margin: 0 10px;
 }
 
+/* Footer Navigation */
 .footer-nav {
   margin-bottom: 1.5rem;
 }
 
+/* Footer Links */
 .footer-nav a {
   color: #fff;
   text-decoration: none;
@@ -641,66 +706,77 @@ footer {
   font-size: 14px;
 }
 
+/* Footer Link Hover */
 .footer-nav a:hover {
   text-decoration: underline;
 }
 
+/* Rating Container */
 .footer-rating {
   margin-bottom: 1.5rem;
 }
 
+/* Rating Logo */
 .rating-logo {
   height: 60px;
 }
 
+/* Legal Text Container */
 .footer-legal {
   width: 80%;
   margin: 0 auto 1.5rem;
 }
 
+/* Legal Text */
 .footer-legal p {
   font-size: 12px;
   margin-bottom: 0.5rem;
   opacity: 0.7;
 }
 
+/* Company Info Section */
 .footer-company {
   margin-top: 2rem;
 }
 
+/* Company Logo */
 .company-logo {
   height: 50px;
   margin-bottom: 1rem;
 }
 
+/* Company Info Text */
 .footer-company p {
   font-size: 12px;
   opacity: 0.7;
 }
 
+/* Character Page Layout */
 .character-page {
-  padding: 120px 40px 60px;
+  padding: 120px 40px 60px; /* Extra padding for header */
   background-color: #050510;
   color: white;
 }
 
+/* Page Title */
 .page-title {
   text-align: center;
   font-size: 36px;
   margin-bottom: 40px;
 }
 
+/* Card Grid Layout */
 .character-grid, .worlds-grid {
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
   gap: 15px;
   max-width: 1500px;
   margin: 0 auto;
   padding: 20px;
-  
 }
 
+/* Card Styling */
 .character-card, .world-card {
   background-color: rgba(20, 20, 40, 0.7);
   border-radius: 15px;
@@ -714,35 +790,42 @@ footer {
   border: 1px solid rgba(155, 201, 255, 0.1);
 }
 
+/* Card Hover Effect */
 .character-card:hover, .world-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 15px 30px rgba(155, 201, 255, 0.2);
   border-color: rgba(155, 201, 255, 0.4);
 }
 
+/* Card Image Container */
 .card-image-container {
   position: relative;
   overflow: hidden;
 }
 
+/* Card Image with Transition */
 .character-card img, .world-card img {
   width: 100%;
   transition: transform 0.5s ease;
   object-fit: cover;
 }
 
+/* Character Image Height */
 .character-card img {
   height: 380px;
 }
 
+/* World Image Height */
 .world-card img {
   height: 200px;
 }
 
+/* Image Zoom on Hover */
 .character-card:hover img, .world-card:hover img {
   transform: scale(1.05);
 }
 
+/* Card Content Area */
 .card-content {
   padding: 20px;
   flex-grow: 1;
@@ -750,6 +833,7 @@ footer {
   flex-direction: column;
 }
 
+/* Card Title */
 .card-content h2 {
   font-size: 22px;
   margin-bottom: 12px;
@@ -757,14 +841,15 @@ footer {
   font-weight: 600;
 }
 
+/* Card Description */
 .card-content p {
   font-size: 15px;
   color: #eaeaea;
   line-height: 1.6;
-  flex-grow: 1;
+  flex-grow: 1; /* Push button to bottom */
 }
 
-/* Path/element badge for character cards */
+/* Element Badge */
 .path-badge {
   position: absolute;
   top: 15px;
@@ -780,13 +865,14 @@ footer {
   box-shadow: 0 0 10px rgba(155, 201, 255, 0.5);
 }
 
+/* Badge Icon */
 .path-badge img {
   width: 25px !important;
   height: 25px !important;
   object-fit: contain !important;
 }
 
-/* World type badge */
+/* World Type Badge */
 .world-type {
   background-color: rgba(10, 10, 25, 0.8);
   display: inline-block;
@@ -799,7 +885,7 @@ footer {
   border: 1px solid rgba(155, 201, 255, 0.3);
 }
 
-/* Card details button */
+/* Card Button */
 .card-button {
   margin-top: 15px;
   background-color: rgba(155, 201, 255, 0.1);
@@ -815,13 +901,14 @@ footer {
   display: block;
 }
 
+/* Button Hover */
 .card-button:hover {
   background-color: rgba(155, 201, 255, 0.2);
   border-color: rgba(155, 201, 255, 0.6);
   color: white;
 }
 
-/* Filter/category system */
+/* Filter Container */
 .filter-container {
   display: flex;
   justify-content: center;
@@ -831,6 +918,7 @@ footer {
   max-width: 1200px;
 }
 
+/* Filter Button */
 .filter-button {
   background-color: rgba(10, 10, 25, 0.8);
   color: white;
@@ -842,17 +930,19 @@ footer {
   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
+/* Filter Button Hover */
 .filter-button:hover {
   background-color: rgba(155, 201, 255, 0.2);
 }
 
+/* Active Filter */
 .filter-button.active {
   background-color: rgba(155, 201, 255, 0.3);
   border-color: rgba(155, 201, 255, 0.8);
   box-shadow: 0 0 10px rgba(155, 201, 255, 0.4);
 }
 
-/* Page title enhancement */
+/* Enhanced Page Title */
 .page-title {
   text-align: center;
   font-size: 42px;
@@ -861,6 +951,7 @@ footer {
   text-shadow: 0 0 10px rgba(155, 201, 255, 0.5);
 }
 
+/* Page Subtitle */
 .page-subtitle {
   text-align: center;
   font-size: 18px;
@@ -869,7 +960,7 @@ footer {
   color: #eaeaea;
 }
 
-/* Section divider */
+/* Section Divider */
 .section-divider {
   height: 2px;
   background: linear-gradient(to right, transparent, rgba(155, 201, 255, 0.5), transparent);
@@ -877,46 +968,51 @@ footer {
   max-width: 80%;
 }
 
-/* Responsive adjustments */
+/* Mobile Responsive Adjustments */
 @media (max-width: 768px) {
+  /* Mobile Card Grid */
   .character-grid, .worlds-grid {
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     gap: 20px;
   }
   
+  /* Mobile Character Images */
   .character-card img {
     height: 300px;
   }
   
+  /* Mobile Page Title */
   .page-title {
     font-size: 32px;
   }
   
+  /* Mobile Element Badges */
   .path-badge {
     width: 35px;
     height: 35px;
   }
   
+  /* Mobile Badge Icons */
   .path-badge img {
     width: 20px !important;
     height: 20px !important;
   }
-
 }
 
-/* Paths page specific styles */
+/* Main page container styles */
 .paths-page {
   padding: 120px 40px 60px;
   background-color: #050510;
   color: white;
 }
 
-/* Path sections styling */
+/* Center content within maximum width */
 .paths-container {
   max-width: 1200px;
   margin: 0 auto;
 }
 
+/* Styling for individual path sections with hover effects */
 .path-section {
   background-color: rgba(20, 20, 40, 0.7);
   border-radius: 15px;
@@ -927,12 +1023,14 @@ footer {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Animation effect on hover for path sections */
 .path-section:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(155, 201, 255, 0.2);
   border-color: rgba(155, 201, 255, 0.3);
 }
 
+/* Header section for each path */
 .path-header {
   display: flex;
   align-items: center;
@@ -941,6 +1039,7 @@ footer {
   border-bottom: 1px solid rgba(155, 201, 255, 0.2);
 }
 
+/* Container for path icon with glow effects */
 .path-icon-container {
   width: 70px;
   height: 70px;
@@ -954,28 +1053,33 @@ footer {
   box-shadow: 0 0 15px rgba(155, 201, 255, 0.2);
 }
 
+/* Icon size within container */
 .path-icon {
   width: 45px;
   height: 45px;
   object-fit: contain;
 }
 
+/* Title section layout */
 .path-title {
   flex: 1;
 }
 
+/* Path name styling */
 .path-title h2 {
   font-size: 28px;
   margin-bottom: 5px;
   color: #9bc9ff;
 }
 
+/* Subtitle under path name */
 .path-subtitle {
   font-size: 16px;
   color: #eaeaea;
   font-weight: 300;
 }
 
+/* Content section with flex layout */
 .path-content {
   display: flex;
   flex-wrap: wrap;
@@ -983,11 +1087,13 @@ footer {
   gap: 30px;
 }
 
+/* Path description area */
 .path-description {
   flex: 2;
   min-width: 300px;
 }
 
+/* Text styling for description paragraphs */
 .path-description p {
   font-size: 16px;
   line-height: 1.7;
@@ -995,39 +1101,46 @@ footer {
   color: #eaeaea;
 }
 
+/* Feature list style removal */
 .path-features {
   list-style: none;
   padding: 0;
 }
 
+/* Individual feature item styling */
 .path-features li {
   margin-bottom: 10px;
   font-size: 15px;
   color: #d9d9d9;
 }
 
+/* Highlight for important feature text */
 .feature-highlight {
   color: #9bc9ff;
   font-weight: 500;
 }
 
+/* Character section for each path */
 .path-characters {
   flex: 1;
   min-width: 250px;
 }
 
+/* Character section title */
 .path-characters h3 {
   font-size: 20px;
   margin-bottom: 15px;
   color: #9bc9ff;
 }
 
+/* Layout for character list */
 .path-character-list {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
 }
 
+/* Individual character item with hover effect */
 .path-character-item {
   display: flex;
   flex-direction: column;
@@ -1036,10 +1149,12 @@ footer {
   transition: transform 0.3s ease;
 }
 
+/* Character hover animation */
 .path-character-item:hover {
   transform: translateY(-5px);
 }
 
+/* Character avatar styling */
 .path-character-item img {
   width: 60px;
   height: 60px;
@@ -1049,18 +1164,20 @@ footer {
   margin-bottom: 8px;
 }
 
+/* Character name text */
 .path-character-item span {
   font-size: 14px;
   text-align: center;
   color: #eaeaea;
 }
 
-/* Team building section */
+/* Team building section styles */
 .paths-team-building {
   max-width: 1200px;
   margin: 60px auto 0;
 }
 
+/* Team building section title */
 .paths-team-building h2 {
   font-size: 32px;
   margin-bottom: 20px;
@@ -1068,6 +1185,7 @@ footer {
   text-align: center;
 }
 
+/* Team building description */
 .paths-team-building > p {
   text-align: center;
   max-width: 800px;
@@ -1076,12 +1194,14 @@ footer {
   color: #eaeaea;
 }
 
+/* Grid layout for team compositions */
 .team-compositions {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
 }
 
+/* Individual team composition card with hover effect */
 .team-comp {
   background-color: rgba(20, 20, 40, 0.7);
   border-radius: 15px;
@@ -1090,12 +1210,14 @@ footer {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Team composition hover animation */
 .team-comp:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(155, 201, 255, 0.2);
   border-color: rgba(155, 201, 255, 0.3);
 }
 
+/* Team composition title */
 .team-comp h3 {
   font-size: 22px;
   margin-bottom: 15px;
@@ -1103,6 +1225,7 @@ footer {
   text-align: center;
 }
 
+/* Layout for paths within team composition */
 .team-paths {
   display: flex;
   justify-content: center;
@@ -1111,6 +1234,7 @@ footer {
   margin-bottom: 20px;
 }
 
+/* Individual path in team composition */
 .team-path {
   display: flex;
   flex-direction: column;
@@ -1118,6 +1242,7 @@ footer {
   width: 60px;
 }
 
+/* Path icon styling in team composition */
 .team-path img {
   width: 40px;
   height: 40px;
@@ -1129,19 +1254,21 @@ footer {
   margin-bottom: 5px;
 }
 
+/* Path name in team composition */
 .team-path span {
   font-size: 12px;
   text-align: center;
   color: #eaeaea;
 }
 
+/* Team composition description */
 .team-comp p {
   font-size: 15px;
   color: #d9d9d9;
   text-align: center;
 }
 
-/* Path-specific colors */
+/* Custom colors for different path types */
 #destruction .path-icon-container {
   border-color: rgba(255, 100, 100, 0.5);
   box-shadow: 0 0 15px rgba(255, 100, 100, 0.3);
@@ -1182,35 +1309,42 @@ footer {
   box-shadow: 0 0 15px rgba(180, 120, 220, 0.3);
 }
 
-/* Responsive adjustments */
+/* Mobile responsiveness */
 @media (max-width: 768px) {
+  /* Stack header elements vertically on mobile */
   .path-header {
     flex-direction: column;
     text-align: center;
     padding: 20px;
   }
   
+  /* Center icon on mobile */
   .path-icon-container {
     margin-right: 0;
     margin-bottom: 15px;
   }
   
+  /* Stack content sections vertically on mobile */
   .path-content {
     flex-direction: column;
   }
   
+  /* Center character list on mobile */
   .path-character-list {
     justify-content: center;
   }
   
+  /* Single column for team compositions on mobile */
   .team-compositions {
     grid-template-columns: 1fr;
   }
   
+  /* Adjust page padding for mobile */
   .paths-page {
     padding: 100px 20px 40px;
   }
   
+  /* Smaller title font on mobile */
   .path-title h2 {
     font-size: 24px;
   }
