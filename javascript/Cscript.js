@@ -36,16 +36,16 @@ const characters = [
     { name: "Herta", rarity: "4 Star", path: "erudition", element: "ice", description: "The genius founder and director of the Herta Space Station." },
     { name: "Himeko", rarity: "5 Star", path: "erudition", element: "fire", description: "A brilliant scientist who first encountered the Astral Express as a child." },
     { name: "Hook", rarity: "4 Star", path: "destruction", element: "fire", description: "A Belobog Underground resident who loves explosives and causing destruction." },
-    { name: "Huohuo", rarity: "5 Star", path: "abundance", element: "wind", description: "A young Foxian diviner from the Xianzhou who specializes in healing arts." },
-    { name: "Jade", rarity: "5 Star", path: "erudition", element: "quantum", description: "A renowned Vidyadhara scholar with extensive knowledge of quantum theories." },
-    { name: "Jiaoqiu", rarity: "5 Star", path: "nihility", element: "fire", description: "A deceptive figure who manipulates fire and illusions for their own purposes." },
+    { name: "Huohuo", rarity: "5 Star", path: "abundance", element: "wind", description: "A pitiable and helpless Foxian girl who is also a Ten-Lords Commission Judge-in-training, who fears ghosts but must catch them." },
+    { name: "Jade", rarity: "5 Star", path: "erudition", element: "quantum", description: "A senior manager in the IPC Strategic Investment Department and one of the Ten Stonehearts." },
+    { name: "Jiaoqiu", rarity: "5 Star", path: "nihility", element: "fire", description: "A foxian healer from the Xianzhou Yaoqing and a counselor. Often greets people with a smile, but is rather cunning." },
     { name: "Jing Yuan", rarity: "5 Star", path: "erudition", element: "lightning", description: "The General of the Cloud Knights and one of the Six Charioteers of the Xianzhou Luofu." },
     { name: "Jingliu", rarity: "5 Star", path: "destruction", element: "ice", description: "A legendary sword master who returned from death, known as the Icy Blade that Stains Sakura." },
     { name: "Kafka", rarity: "5 Star", path: "nihility", element: "lightning", description: "A mysterious intelligence agent and member of the Stellaron Hunters." },
-    { name: "Lingsha", rarity: "5 Star", path: "abundance", element: "fire", description: "A healer specializing in fire-based remedies and restorative techniques." },
+    { name: "Lingsha", rarity: "5 Star", path: "abundance", element: "fire", description: "The new Cauldron Master of the Xianzhou Luofu's Alchemy Commission. An intelligent and quick-witted Vidyadhara healer." },
     { name: "Luka", rarity: "4 Star", path: "nihility", element: "physical", description: "A member of Wildfire from Belobog who uses deception and speed in combat." },
     { name: "Luocha", rarity: "5 Star", path: "abundance", element: "imaginary", description: "A mysterious doctor wandering the universe with a coffin, hiding secrets behind his gentle smile." },
-    { name: "Lynx", rarity: "4 Star", path: "abundance", element: "quantum", description: "A medic from Belobog specializing in quantum healing techniques." },
+    { name: "Lynx", rarity: "4 Star", path: "abundance", element: "quantum", description: "The youngest daughter of the Landau Family, and one of Belobog's best extreme environments explorers." },
     { name: "March 7th (Preservation)", rarity: "4 Star", path: "preservation", element: "ice", description: "A cheerful girl with ice powers who was found frozen in space by the Astral Express crew." },
     { name: "March 7th (Hunt)", rarity: "4 Star", path: "hunt", element: "imaginary", description: "An alternate version of March 7th who follows the path of Hunt with imaginary powers." },
     { name: "Misha", rarity: "4 Star", path: "destruction", element: "ice", description: "A talented pianist from Belobog with powerful ice abilities." },
@@ -61,7 +61,7 @@ const characters = [
     { name: "Seele", rarity: "5 Star", path: "hunt", element: "quantum", description: "A swift combatant from Belobog's Wildfire organization who moves like shadow." },
     { name: "Serval", rarity: "4 Star", path: "erudition", element: "lightning", description: "A rock star from Belobog who can control lightning with her electric guitar." },
     { name: "Silver Wolf", rarity: "5 Star", path: "nihility", element: "quantum", description: "A master hacker of the Stellaron Hunters capable of manipulating digital dimensions." },
-    { name: "Sparkle", rarity: "5 Star", path: "harmony", element: "quantum", description: "The Dream's Apex of the Dreamscape Corporation in Penacony and an expert on quantum harmonization." },
+    { name: "Sparkle", rarity: "5 Star", path: "harmony", element: "quantum", description: "A member of the Masked Fools. Inscrutable and unscrupulous. A dangerous master of theatrics engrossed in playing roles." },
     { name: "Sunday", rarity: "5 Star", path: "harmony", element: "imaginary", description: "A harmonizer who manipulates imaginary energy to support allies." },
     { name: "Sushang", rarity: "4 Star", path: "hunt", element: "physical", description: "A skilled martial artist from the Xianzhou Luofu dedicated to sword training and combat." },
     { name: "The Herta", rarity: "5 Star", path: "erudition", element: "ice", description: "The true form of Herta with enhanced ice manipulation and intellect." },
@@ -76,7 +76,7 @@ const characters = [
     { name: "Xueyi", rarity: "4 Star", path: "destruction", element: "quantum", description: "A quantum destroyer from the Xianzhou with powerful combat abilities." },
     { name: "Yanqing", rarity: "5 Star", path: "hunt", element: "ice", description: "A young but talented swordsman from the Cloud Knights of the Xianzhou Luofu." },
     { name: "Yukong", rarity: "4 Star", path: "harmony", element: "imaginary", description: "A senior Sky-Faring Commission officer on the Xianzhou Luofu with imaginary powers." },
-    { name: "Yunli", rarity: "5 Star", path: "destruction", element: "physical", description: "A physical damage dealer who specializes in destructive combat techniques." }
+    { name: "Yunli", rarity: "5 Star", path: "destruction", element: "physical", description: "A sword hunter from the Xianzhou Zhuming and the Flaming Heart General Huaiyan's darling granddaughter." }
 ];
   
   // Function to generate character cards
